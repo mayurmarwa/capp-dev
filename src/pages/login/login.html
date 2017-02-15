@@ -1,0 +1,65 @@
+<!--
+  Generated template for the Login page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+
+
+<ion-content class="ion_content_bg" padding>
+	<div style="text-align:center;">
+	<img src="../assets/images/logo_signin.png" class="logo_style">
+	</div>
+	<div class="bottom-content row centerClass">
+		 
+		<div> 
+	    	<ion-row>
+		      <ion-col>
+		        <ion-list>
+		          <ion-item>
+		            <ion-icon name="md-contact" item-left></ion-icon>
+		            <ion-input type="text" placeholder="Enter Email ID"></ion-input>
+		          </ion-item>
+		 
+		          <ion-item style="margin-top:5%;">
+		            <ion-icon name="md-lock" item-left></ion-icon>
+		            <ion-input type="password" placeholder="************"></ion-input>
+		          </ion-item>
+		 
+		        </ion-list>
+		      </ion-col>
+		    </ion-row>
+	    </div>
+	    
+	    <div>
+			<a style="color:#ffffff;"> Forgot password?</a>	  
+	    </div> 		
+	    <div class="col col-center">
+	        <div class="centerClass2">
+			    <button ion-button full block class="login_button" (click)="goHomePage()">sign In</button>
+			</div>
+			<div class="register_button">
+				<button ion-button block color="light" outline> NOT A MEMBER? SIGN UP NOW! </button>
+			</div>		
+	    </div>
+	</div>
+	<div class="social-login"> 
+		<button ion-button class="fb_login" >
+	      	<ion-icon name='logo-facebook' is-active="false"></ion-icon>
+	    </button>
+	    <button ion-button class="google_login" >
+	      	<ion-icon name='logo-googleplus' is-active="false"></ion-icon>
+	    </button>
+	    <button ion-button class="twitter_login" >
+	      	<ion-icon name='logo-twitter' is-active="false"></ion-icon>
+	    </button>
+
+    </div> 
+</ion-content>

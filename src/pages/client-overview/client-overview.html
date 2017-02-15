@@ -1,0 +1,120 @@
+<!--
+  Generated template for the ClientOverview page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      	<ion-icon name="menu"></ion-icon>
+    	</button>
+      <ion-buttons end>
+        <button ion-button icon-only (click)="presentPopover($event)" end>
+          <ion-icon name="ios-contact" class="icon-color"></ion-icon><ion-icon name="md-arrow-dropdown" class="user-color"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-icon name="md-person"> CLIENT MANAGEMENT DASHBOARD </ion-icon>
+<ion-grid>
+  <ion-row>
+    <ion-col width-20 class="button-bground" >
+        <button ion-button class="working" (click)="workingPage()" >
+		    <ion-icon name='md-desktop' is-active="false"></ion-icon>
+		</button>
+	</ion-col>
+	
+	<ion-col width-30 class="button-bground" > 
+    	<p style="font-size:1.2rem;"> 10 <br> Working <p>
+    </ion-col>
+    
+    <ion-col width-20 class="button-bground" offset-10>
+    	<button ion-button class="connecting"  >
+	      	<ion-icon name='md-link' is-active="false"></ion-icon>
+	    </button>
+    </ion-col>
+    <ion-col width-30 class="button-bground" > 
+    	<p style="font-size:1.2rem;"> 30 <br> Connecting <p>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+    <ion-col width-20 class="button-bground" >
+        <button ion-button class="history" (click) = "history()" >
+		    <ion-icon name='md-document' is-active="false"></ion-icon>
+		</button>
+	</ion-col>
+	
+	<ion-col width-30 class="button-bground" > 
+    	<p style="font-size:1.2rem;"> 256 <br> History <p>
+    </ion-col>
+    
+    <ion-col width-20 class="button-bground" offset-10>
+    	<button ion-button class="messages" (click)= "messages()" >
+	      	<ion-icon name='ios-mail-outline' is-active="false"></ion-icon>
+	    </button>
+    </ion-col>
+    <ion-col width-30 class="button-bground" > 
+    	<p style="font-size:1.2rem;"> 07 <br> Messages <p>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+    <ion-col width-20 class="button-bground" >
+        <button ion-button class="backup" (click)="backup()" >
+		    <ion-icon name='logo-buffer' is-active="false"></ion-icon>
+		</button>
+	</ion-col>
+	
+	<ion-col width-30 class="button-bground" > 
+    	<p style="font-size:1.2rem;"> 00 <br> Back-up <p>
+    </ion-col>
+    
+    <ion-col width-20 class="button-bground" offset-10>
+    	<button ion-button class="debators"  (click)="debators()">
+	      	<ion-icon name='md-cash' is-active="false"></ion-icon>
+	    </button>
+    </ion-col>
+    <ion-col width-30 class="button-bground" > 
+    	<p style="font-size:1.2rem;"> 01 <br> Debators <p>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<!-- *************************************************-->
+<ion-card>
+  <ion-card-header>
+    CONSTITUTION OVERVIEW
+  </ion-card-header>
+  <ion-card-content>
+    Overview Mitul Rathod Constitution Statistics.
+  </ion-card-content>
+</ion-card>
+
+<!-- ************************************************ -->
+<ion-card>
+  <ion-card-header>
+    CONSTITUTION TASK STATISTICS
+  </ion-card-header>
+  <ion-card-content>
+    Overview Mitul Rathod Constitution Task Statistics
+  </ion-card-content>
+</ion-card>
+<!-- ************************************************ -->
+<ion-card>
+  <ion-card-header>
+    CLIENT WORKING STATISTICS
+  </ion-card-header>
+  <ion-card-content>
+    Overview Mitul Rathod Working Statistics
+  </ion-card-content>
+</ion-card>
+
+</ion-content>

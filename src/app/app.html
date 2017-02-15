@@ -1,0 +1,53 @@
+<ion-menu [content]="content">
+  <ion-header style="background-color:#20242d;">
+    
+      <img src="../assets/images/logo_header.png" style="height:35%; width:80%;" >
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button menuClose ion-item>
+        <ion-icon name="md-speedometer" class="icon-color"></ion-icon> <b>DASHBOARD </b>
+      </button>
+
+     <button menuClose ion-item>
+	    <ion-icon name="md-list-box" class="icon-color"></ion-icon> <b>TODO LIST</b>
+     </button>
+
+     <button menuClose ion-item>
+      <ion-icon name="md-calendar" class="icon-color"></ion-icon> <b>TODAY</b>
+     </button> 
+      <!-- <button menuClose ion-item (click)="callToSupervisor()">
+        <ion-icon name="call"></ion-icon> Call Supervisor
+      </button> -->
+     <!--  <button  ion-item *ngFor="let data of subMenus" (click)="toggleclientManagement()">
+	    <ion-icon name="md-person" ></ion-icon> <ion-icon color="primary" item-right [name]="data.icon"></ion-icon>Client Management
+     </button>
+	    
+      <div *ngIf ="data.showSubmenu == true">
+        <ion-list no-lines>
+          <button ion-item> 1st sub menu </button>
+          <button ion-item> 2nd sub menu </button>
+        </ion-list>
+      </div> -->
+      
+      <!-- <ion-item *ngFor="let p of pages" (click)="toggleSubMenu(p)">
+        <ion-icon [name]="p.icon" item-right></ion-icon> {{p.title}}
+      </ion-item> -->
+      <button ion-item (click)="togglemenu()">
+      <ion-icon name="md-person" class="icon-color"></ion-icon><ion-icon color="primary" item-right [name]="toggleIcon"></ion-icon><b> CLIENT MANAGEMENT </b>
+      </button>
+      
+      <div *ngIf ="toggleMenu == true">
+       <ion-list no-lines *ngFor="let data of clientSub">
+         <button  ion-item menuClose (click)="openSubMenu(data)">
+           {{data.title}}
+         </button>
+       </ion-list>
+      </div> 
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="true"></ion-nav>

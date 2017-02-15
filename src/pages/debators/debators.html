@@ -1,0 +1,82 @@
+<!--
+  Generated template for the Debators page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      	<ion-icon name="menu"></ion-icon>
+    	</button>
+      <ion-buttons end>
+        <button ion-button icon-only (click)="presentPopover($event)" end>
+          <ion-icon name="ios-contact" class="icon-color"></ion-icon><ion-icon name="md-arrow-dropdown" class="user-color"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+<ion-toolbar>
+    <ion-segment [(ngModel)]="debator">
+      <ion-segment-button value="mhr">
+        MHR & ASSOCIATES
+      </ion-segment-button>
+      <ion-segment-button value="a3">
+        A3 CONSULATANCY
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+<div [ngSwitch]="debator">
+    <ion-card  *ngSwitchCase="'mhr'">
+    <ion-card-header>
+	    MANAGE CLIENTS DOCUMENTS
+	</ion-card-header>
+	<ion-card-content>
+	You can view and download client documents
+    <ion-grid >
+	    <ion-row style="border: 1px solid #7f8c8d; font-size:1.2rem;">
+		    <ion-col width-5>
+		      1
+		    </ion-col>
+		    <ion-col width-20>
+			AMIT RATHOD
+		    </ion-col>
+		    <ion-col width-45>
+		    </ion-col>
+		    <ion-col width-30>
+		      ₹ 9,686
+		    </ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-grid >
+	    <ion-row style="border: 1px solid #7f8c8d; font-size:1.2rem;">
+		     <ion-col width-5>
+		      2
+		    </ion-col>
+		    <ion-col width-20>
+			AMIT RATHOD
+		    </ion-col>
+		    <ion-col width-45>
+		    </ion-col>
+		    <ion-col width-30>
+		      ₹ 9,686
+		    </ion-col>
+		</ion-row>
+	</ion-grid>
+    </ion-card-content>
+ </ion-card>
+
+    <ion-list *ngSwitchCase="'a3'">
+	    <ion-card>
+		  <ion-card-header>
+		    Header
+		  </ion-card-header>
+		  <ion-card-content>
+		    The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+		  </ion-card-content>
+		</ion-card>
+    </ion-list>
+  </div>
+</ion-content>

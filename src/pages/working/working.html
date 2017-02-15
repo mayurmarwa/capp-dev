@@ -1,0 +1,74 @@
+<!--
+  Generated template for the Working page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      	<ion-icon name="menu"></ion-icon>
+    	</button>
+      <ion-buttons end>
+        <button ion-button icon-only (click)="presentPopover($event)" end>
+          <ion-icon name="ios-contact" class="icon-color"></ion-icon><ion-icon name="md-arrow-dropdown" class="user-color"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-icon name="md-desktop"> CLIENT MANAGEMENT</ion-icon>
+  <ion-card>
+	  <ion-card-header>
+	  WORKINGS
+	  </ion-card-header>
+	  <ion-card-content>
+	    You can track clients pending projects and services
+	    <!-- <ion-list>
+		  <ion-item>AMIT RATHOD
+           New Services, New Services By Admin
+          </ion-item>
+		  <ion-item>MADHURI SHINDE
+           Service Tax Return Filing
+          </ion-item>
+		  <ion-item>ABC TECHNOLOGIES
+          Income Tax Return Filing (Non-Audit)
+          </ion-item>
+		</ion-list> -->
+		<div class="name_list">
+		   <b>	AMIT RATHOD </b> <br>
+            New Services, New Services By Admin
+		</div>
+		<div class="name_list">
+			<b> MADHURI SHINDE </b> <br>
+            Service Tax Return Filing
+		</div>
+		<div class="name_list">
+			<b> ABC TECHNOLOGIES </b> <br>
+			Income Tax Return Filing (Non-Audit)
+		</div>
+		<div class="name_list">
+			<b> MIDAS TOUCH CONSULTANCY SERVICES </b> <br>
+            Private Limited Company Formation
+		</div>
+	  </ion-card-content>
+	  <!-- <ion-list>
+		<ion-item>
+		<ion-icon name="leaf" item-left></ion-icon>
+		  Herbology
+		<ion-icon name="rose" item-right></ion-icon>
+		</ion-item>
+	  </ion-list> -->
+  </ion-card>
+
+  	<ion-card>
+	  <ion-card-header>
+	  <b>  CLIENT WORKING OVERVIEW </b>
+	  </ion-card-header>
+	  <ion-card-content>
+	    You can view clients working overview.
+	  </ion-card-content>
+	</ion-card>
+</ion-content>

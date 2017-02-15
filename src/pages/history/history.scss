@@ -1,0 +1,43 @@
+page-history {
+	.toolbar-background{
+        border-color:#262b36;
+        background: #262b36; 
+
+    }
+    .content-md {
+    	background-color:#efefef;
+    } 
+    .button-bground {
+    	background-color:#ffffff; 
+    }
+    .icon-color {
+		color:#ffffff;
+    }
+
+    .user-color {
+    	color:#ffffff;	
+    }
+    .item-md {
+		font-size: 1.3rem;
+		color: #ffffff;
+   	}
+
+    .ion-col {
+    	border: 1px solid #7f8c8d;
+    }
+   	ion-row.active {
+	  background-color: #f5f5f5;
+	}
+
+	ion-row.success {
+	  background-color: #dff0d8;
+	}
+
+	ion-row.warning {
+	  background-color: #fcf8e3;
+	}
+
+	ion-row.error {
+	  background-color: #f2dede;
+	}
+}

@@ -1,0 +1,43 @@
+page-client-overview {
+	.toolbar-background{
+        border-color:#262b36;
+        background: #262b36; 
+
+    }
+    .content-md {
+    	background-color:#efefef;
+    } 
+    .button-bground {
+    	background-color:#ffffff; 
+    }
+    .icon-color {
+		color:#ffffff;
+    }
+
+    .user-color {
+    	color:#ffffff;	
+    }
+    .item-md {
+		font-size: 1.3rem;
+		color: #ffffff;
+   	}
+   .working {
+        background-color: #de7023;
+    }
+    .connecting {
+    	background-color: #539fd5; 
+    }
+    .history {
+    	background-color: #6dcb3d;
+    }
+    .messages {
+    	background-color: #808080; 
+    }
+    .backup {
+    	background-color: #ffd800;
+    }
+    .debators {
+    	background-color: #333740;
+    }
+
+}
